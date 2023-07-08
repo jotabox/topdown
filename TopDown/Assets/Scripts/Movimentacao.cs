@@ -5,8 +5,6 @@ using UnityEngine;
 public class Movimentacao : MonoBehaviour
 {
     private Rigidbody2D rigi;
-
-
     private float speedMoveX;
     private float speedMoveY;
     [SerializeField] private float moviment;
@@ -40,9 +38,6 @@ public class Movimentacao : MonoBehaviour
         Vector2 direction = new Vector2 (speedMoveX, speedMoveY).normalized;
 
         rigi.velocity =  direction * moviment;
-
-
-
 
     }
 }

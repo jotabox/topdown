@@ -15,12 +15,6 @@ public class PlayerControll : MonoBehaviour
         rigi = GetComponent<Rigidbody2D>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -38,9 +32,5 @@ public class PlayerControll : MonoBehaviour
         Vector2 direction = new Vector2(speedMoveX, speedMoveY).normalized;
 
         rigi.velocity = direction * moviment;
-
-
-
-
     }
 }
